@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usinagem E.S</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
+    <script src="https://kit.fontawesome.com/e1d6530d91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+
+        
+        <a class="logo" href="index.html">
+            <img src="img/Logo-removebg-preview.png" alt="Usinagem Espírito Santo">
+        </a>
+        
+        <button id="menu-toggler" aria-label="Abrir Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="main-nav">
+            <ul id="Menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#Sobre">Sobre</a></li>
+                <li><a href="index.html#Servicos">Serviços</a></li>
+                <li><a href="index.html#Contato">Contato</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+            </ul>
+        </nav>
+
+    </header> <!--Fechamento do Header-->
+
+   <main>
+        <section id="Home" >
+            <h1>Solicite Seu Orçamento</h1> 
+            
+            <p>Precisão e Qualidade em Serviços Metalúrgicos.</p> 
+        </section>
+
+        <section id="forms">
+        <!--O conteúdo do formulário vai aqui! -->
+
+        <form>
+            <label for="idNome">Nome do Cliente</label>
+            <input type="text" name="iNome" id="idNome" placeholder="Cliente / Empresa">
+
+            <label for="idContato">Telefone</label>
+            <input type="tel" name="iContado" id="idContato" required placeholder="(XX) X XXXX-XXXX">
+
+            <label for="idMaterial">Material *</label>
+            <select required name="iMaterial" id="idMaterial">
+                <option value="" disabled selected>Selecione o material...</option>
+                <option value="Aço em Geral">
+                    Aço em Geral
+                </option>
+                <option value="Inox">Inox</option>
+                <option value="Acrilico">Acrílico</option>
+                <option value="Aluminio">Aluminio</option>
+                <option value="Plastico">Plastico</option>
+                <option value="Latão">Latão</option>
+                <option value="Cobre">Cobre</option>
+            </select>
+
+            <label for="idQuantidade">Quantidade</label>
+            <input type="number" name="iQuantidade" id="idQuantidade" min="0" required placeholder="0">
+
+            <label for="idDescricao">Descrição e Observações</label>
+            <textarea id="iDescricao" name="idDescricao" rows="5" placeholder="Descreva medidas, acabamento e detalhes..."
+            ></textarea>
+
+            <label for="idAnexos">Anexe o Desenho Técnico</label>
+            <input type="file" name="iAnexos" id="idAnexos" required accept=".pdf,.png,.jpg">
+
+            <button type="submit">
+                Fazer pedido
+            </button>
+        </form>
+        </section>
+   </main>
+
+
+
+    
+
+    <footer>
+        <p>
+            &copy; 2026 Ferramentaria Espirito Santo
+        </p>
+
+        <p>
+            Desenvolvido por 
+            <a href="https://github.com/devls-io" target="_blank">Leonardo Sudré</a>
+        </p>
+
+    </footer> <!--Fechamento do footer-->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
